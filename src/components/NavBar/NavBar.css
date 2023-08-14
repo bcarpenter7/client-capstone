@@ -1,0 +1,27 @@
+
+
+.navDiv {
+    display: flex;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    width: 100%;
+    margin: 5vmin auto 0 auto;
+    gap: 1vmin;
+    align-items: center;
+    background-color: var(--background);
+    border-bottom: 5px solid var(--black);
+    justify-content: space-between;
+
+}
+
+.homeBtnDiv {
+    margin-left: 2vmin;
+    font-family: 'Caveat', cursive;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vmin;
+}

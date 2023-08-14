@@ -1,0 +1,46 @@
+.title1{
+    text-align: center;
+}
+.img {
+    width: 15vmin;
+}
+
+.blogCard {
+    width: 90%;
+    border-radius: 5px;
+    margin: 1vmin auto;
+    border: 2px solid black;
+    padding: 3vmin;
+    display: flex;
+    gap: 3vmin;
+    align-items: center;
+
+}
+
+.date {
+    font-weight:lighter;
+}
+
+.previewText {
+    font-weight: 300;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+/* 
+.badBtn {
+    color: white;
+    background-color: blue;
+}
+
+.badBtn:hover {
+    color: white;
+    background-color: red;
+   
+}
+
+.goodBtn {
+    color: blue;
+} */

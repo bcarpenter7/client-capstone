@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ --btn: rgb(77,93, 73);
+
+
+}
+.homeDiv {
+    width: 80vmin;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.max-width {
+  width: 50%;
+}
+
+.max-width-2 {
+  width: 100%;
+}
+
+.mini-pic {
+  border-radius: 50%;
+  width: 5vmin;
+  height: 5vmin;
+}

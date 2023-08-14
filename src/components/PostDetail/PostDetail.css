@@ -1,0 +1,43 @@
+
+.container {
+    width: 80vmin;
+    margin: 0 auto;
+    background-color: rgba(175, 219, 249, 0.316);
+    border-radius: 10px;
+    padding: 3vmin;
+    font-family: 'Roboto Slab', serif;
+}
+
+.titleDetail {
+    font-size: 6vmin;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.authorInfo {
+    display: flex;
+    gap: 3vmin;
+    align-items: center;
+    color: rgb(136, 135, 135);
+}
+
+.authorName {
+    font-size: 4vmin;
+    color: rgb(17, 16, 16);
+}
+
+.authorCreated{
+    color: rgb(17, 16, 16);
+    margin: -3vmin 0 5vmin 0;
+}
+
+
+.imgDetail {
+    width: 100%;
+}
+
+.articleText {
+    font-weight: thinner;
+    font-size: 2.2vmin;
+    white-space: pre-wrap
+}

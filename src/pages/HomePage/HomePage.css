@@ -1,0 +1,32 @@
+
+
+.homeDiv {
+    width: 80vmin;
+    margin: 0 auto;
+    background-color: rgba(175, 219, 249, 0.316);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.profilePicture {
+  width: 40%;
+  /* height: 20vmin; */
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 3vmin;
+}
+
+.userName {
+  font-size: 5vmin;
+}
+
+.editBtn {
+  background-color: rgb(202, 202, 250);
+  padding: 1vmin;
+  border-radius: 100px;
+  border: none;
+  color: white;
+}
