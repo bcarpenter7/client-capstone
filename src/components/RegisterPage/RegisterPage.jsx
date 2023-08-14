@@ -60,7 +60,7 @@ if(!accountExists){
             <input className="mb-3 py-2 px-4 md:px-5 w-full appearance-none transition duration-150 ease-in-out border text-input text-xs lg:text-sm font-body placeholder-body min-h-12 transition duration-200 ease-in-out bg-white border-gray-300 focus:outline-none focus:border-heading h-11 md:h-12" 
             placeholder="Username" onChange={handleChange} name="username"></input>
             
-            <label className="block text-gray-600 font-semibold text-sm leading-none mb-3 cursor-pointer">Password:</label>
+            <label className="block text-gray-600 font-semibold text-sm leading-none mb-3 cursor-pointer">Password: <span className="text-gray-400">We suggest the word "password" since your password will not be private</span></label>
             <input className="mb-3 py-2 px-4 md:px-5 w-full appearance-none transition duration-150 ease-in-out border text-input text-xs lg:text-sm font-body placeholder-body min-h-12 transition duration-200 ease-in-out bg-white border-gray-300 focus:outline-none focus:border-heading h-11 md:h-12"
             placeholder="Password" onChange={handleChange} name="password"></input>
 
@@ -71,6 +71,7 @@ if(!accountExists){
             <label className="block text-gray-600 font-semibold text-sm leading-none mb-3 cursor-pointer">Last Name:</label>
             <input className="mb-3 py-2 px-4 md:px-5 w-full appearance-none transition duration-150 ease-in-out border text-input text-xs lg:text-sm font-body placeholder-body min-h-12 transition duration-200 ease-in-out bg-white border-gray-300 focus:outline-none focus:border-heading h-11 md:h-12"
             placeholder="Last Name" onChange={handleChange} name="lastName"></input>
+            <h2>**This app is for educational purposes only. Do NOT use sensitive data in the password blank. Passwords are being temporarily stored during development and will later be replaced with encryption.**</h2>
             <h1 id="errorMsgTwo" className="text-red">An account already exists with this username.</h1>
             <h1 id="errorMsgThree" className="text-red">Weak Password</h1>
             <h1 id="errorMsgFour" className="text-red">Invalid Username</h1>
