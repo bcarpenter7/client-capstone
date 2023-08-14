@@ -24,7 +24,7 @@ export default function App() {
   // POSTS
   async function getPosts(){
     try {
-      const res = await axios.get('http://localhost:3000/api/posts')
+      const res = await axios.get('https://api-capstone.fly.dev/api/posts')
       setPosts(res.data)
     } catch (err){
       console.error(err)
@@ -33,7 +33,7 @@ export default function App() {
 
 
   const handleCreate = (createdPost) => {
-    axios.post('http://localhost:3000/api/posts', createdPost)
+    axios.post('https://api-capstone.fly.dev/api/posts', createdPost)
       .then((response) => {
         setPosts([...posts, response.data])
       })
@@ -41,7 +41,7 @@ export default function App() {
 
 
   const handleEdit = (editedPost) => {
-    axios.put('http://localhost:3000/api/posts/' + editedPost._id, editedPost)
+    axios.put('https://api-capstone.fly.dev/api/posts/' + editedPost._id, editedPost)
       .then((response) => {
         let newPost = posts.map((post) => {
           return post._id !== editedPost._id ? post : editedPost
@@ -51,7 +51,7 @@ export default function App() {
   }
 
   const handleDelete = (deletedPost) => {
-    axios.delete('http://localhost:3000/api/posts/' + deletedPost)
+    axios.delete('https://api-capstone.fly.dev/api/posts/' + deletedPost)
       .then((response) => {
         let newPosts = posts.filter((post) => {
           return post._id !== deletedPost
@@ -63,7 +63,7 @@ export default function App() {
   // USERS
   async function getUsers(){
     try {
-      const res = await axios.get('http://localhost:3000/api/users')
+      const res = await axios.get('https://api-capstone.fly.dev/api/users')
       setAllUsers(res.data)
     } catch (err){
       console.error(err)
@@ -71,14 +71,14 @@ export default function App() {
   }
 
   const handleCreateUser = (createdUser) => {
-    axios.post('http://localhost:3000/api/users', createdUser)
+    axios.post('https://api-capstone.fly.dev/api/users', createdUser)
       .then((response) => {
         setAllUsers([...allUsers, response.data])
       })
   }
 
   const handleEditUser = (editedUser) => {
-    axios.put('http://localhost:3000/api/users/' + editedUser._id, editedUser)
+    axios.put('https://api-capstone.fly.dev/api/users/' + editedUser._id, editedUser)
       .then((response) => {
         let newUser = allUsers.map((user) => {
           
@@ -91,7 +91,7 @@ export default function App() {
   }
 
   const handleDeleteUser = (deletedUser) => {
-    axios.delete('http://localhost:3000/api/users/' + deletedUser)
+    axios.delete('https://api-capstone.fly.dev/api/users/' + deletedUser)
       .then((response) => {
         let newUsers = allUsers.filter((user) => {
           return user._id !== deletedUser
